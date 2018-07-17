@@ -1,0 +1,58 @@
+.cont {
+    max-width:600px;
+    margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+    border: 3px solid gray;
+ background-color: lightyellow;
+	
+	padding: 20px;
+	font-size: 25px;
+}
+
+h1{
+	
+	text-align: center;
+	background-color: silver;
+	padding: 30px 0px;
+	color: white;
+}
+
+.addItem{
+	
+	position: relative;
+	padding-bottom:0px;
+	height:30px;
+}
+.addText{
+	
+	width: 80%;
+	height: 30px;
+	padding:5px;
+	font-size: 20px;
+}
+
+.addItem button{
+	
+	height:48px;
+	width: 50px;
+	padding:10px;
+	
+}
+.con{
+	 background-color: wheat;
+	padding: 10px 0px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+span{
+	
+	float:right;
+	
+}
+.fl{
+	
+	float:left;
+	
+}

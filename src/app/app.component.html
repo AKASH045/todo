@@ -1,0 +1,20 @@
+<div class = "cont">
+<h1> My Todo list </h1>
+<div class ="addItem">
+
+  <input [(ngModel)]="newItem" placeholder ="Add Item" class="addText">
+  <button (click) ="pushItem()" > Add </button>
+
+</div>
+
+    <div class ="con" *ngFor = "let i of items; let ind of index">
+	<span class = "fl"> <input type='checkbox'  /></span>
+     {{i}}
+	
+	 
+     <span><button (click)="removeItem(ind)" >Remove
+	 </button></span>
+	 
+    </div>
+
+</div>
