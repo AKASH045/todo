@@ -8,15 +8,12 @@
 
 </div>
 
-    <div class ="con" *ngFor = "let data of items; let i= index">
+<div class ="con" *ngFor = "let data of items; let i= index">
 	<span class = "fl"> <input type='checkbox'  /></span>
      {{data}}
 	
 	 <span><button (click)="editItem(i)" >Edit</button></span>
-	 
-     <span><button (click)="removeItem(i)" >Remove</button></span>
+	 <span><button (click)="removeItem(i)" >Remove</button></span>
 	  
-    </div>
-
-
-</div>
+ </div>
+ </div>
