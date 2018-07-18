@@ -4,17 +4,19 @@
 
   <input [(ngModel)]="newItem" placeholder ="Add Item" class="addText">
   <button (click) ="pushItem()" > Add </button>
+   <button type="submit" (click)="UpdateItem()" >Update</button>  
 
 </div>
 
-    <div class ="con" *ngFor = "let i of items; let ind of index">
+    <div class ="con" *ngFor = "let data of items; let i= index">
 	<span class = "fl"> <input type='checkbox'  /></span>
-     {{i}}
+     {{data}}
 	
+	 <span><button (click)="editItem(i)" >Edit</button></span>
 	 
-     <span><button (click)="removeItem(ind)" >Remove
-	 </button></span>
-	 
+     <span><button (click)="removeItem(i)" >Remove</button></span>
+	  
     </div>
+
 
 </div>
