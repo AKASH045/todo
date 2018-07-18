@@ -10,6 +10,7 @@ export class AppComponent {
    items = ["Assignment", "Game", "Study"]
    newItem = "";
    updatedItem ="";
+   IsForUpdate: boolean = false;
  
 
   pushItem = function(){
@@ -26,7 +27,8 @@ export class AppComponent {
 	
 editItem = function(i) {  
    this.newItem = this.items[i];  
-   this.updatedItem = i;  
+   this.updatedItem = i;
+   this.IsForUpdate = true;
   
    }
   
@@ -37,7 +39,7 @@ UpdateItem = function() {
       this.items[i] = this.newItem;  
     }  
    }  
- 
+   this.IsForUpdate = false; 
    this.newItem = "";  
 }  
    
