@@ -3,8 +3,8 @@
 <div class ="addItem">
 
   <input [(ngModel)]="newItem" placeholder ="Add Item" class="addText">
-  <button (click) ="pushItem()" > Add </button>
-  <button type="submit" (click)="UpdateItem()" >Update</button>  
+  <button (click) ="pushItem()" [disabled]="IsForUpdate == true" > Add </button>
+  <button type="submit" (click)="UpdateItem()" [disabled]="IsForUpdate == false" >Update</button>  
 
 </div>
 
