@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  items = ["Assignment", "Game", "Study"]
-  newItem = "";
+   items = ["Assignment", "Game", "Study"]
+   newItem = "";
+   updatedItem ="";
+ 
 
   pushItem = function(){
    if(this.newItem != ""){
@@ -17,9 +19,27 @@ export class AppComponent {
 }
 }
 
-removeItem = function(index){
-	this.items.splice(index,1);
+ removeItem = function(i){
+	this.items.splice(i,1);
 	
 	}
 	
+editItem = function(i) {  
+   this.newItem = this.items[i];  
+   this.updatedItem = i;  
+  
+   }
+  
+UpdateItem = function() {  
+   let data = this.updatedItem;  
+   for (let i = 0; i < this.items.length; i++) {  
+    if (i == data) {  
+      this.items[i] = this.newItem;  
+    }  
+   }  
+ 
+   this.newItem = "";  
+}  
+   
 }
+
