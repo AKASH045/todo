@@ -1,19 +1,20 @@
-<div class = "cont">
+<div class="container" style="margin-top:30px">
 <h1> My Todo list </h1>
-<div class ="addItem">
 
-  <input [(ngModel)]="newItem" placeholder ="Add Item" class="addText">
-  <button (click) ="pushItem()" [disabled]="IsForUpdate == true" > Add </button>
-  <button type="submit" (click)="UpdateItem()" [disabled]="IsForUpdate == false" >Update</button>  
+	<div class="form-group">
+		<input type="text" class="form-control" [(ngModel)]="newItem" placeholder ="Add Item..." >
+	</div>
+
+	<div class ="con1">
+		<button  (click) ="pushItem()"   [disabled]="IsForUpdate == true"  type="button" class="btn btn-success"> Add </button>
+		<button type="submit" (click)="UpdateItem()"  [disabled]="IsForUpdate == false" type="button" class="btn btn-success">Save</button>  
+	</div>
+
+	<div class ="con" *ngFor = "let data of items; let i= index">
+		<span class = "fl"> <input type='checkbox'  /></span>
+		{{data}}
+	<span><button (click)="removeItem(i)"  type="button" class="btn btn-success"><i class="far fa-trash-alt"></i></button></span>
+	<span><button (click)="editItem(i)"  type="button" class="btn btn-success"><i class="far fa-edit"></i></button></span>
+  </div>
 
 </div>
-
-<div class ="con" *ngFor = "let data of items; let i= index">
-	<span class = "fl"> <input type='checkbox'  /></span>
-  {{data}}
-	
-	 <span><button (click)="editItem(i)" >Edit</button></span>
-	 <span><button (click)="removeItem(i)" >Remove</button></span>
-	  
- </div>
- </div>
