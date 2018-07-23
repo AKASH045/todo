@@ -1,20 +1,28 @@
-.cont {
+.container {
     max-width:600px;
     margin: 0 auto;
-	margin-top: 20px;
-	text-align: center;
-    border: 3px solid gray;
- background-color: lightyellow;
-	
-	padding: 20px;
-	font-size: 25px;
+	  margin-top: 20px;
+	  text-align: center;
+    border: 5px solid gray;
+    background-color: #00091a;
+	  padding: 20px;
+	  font-size: 25px;
+}
+
+.con {
+	 border:5px groove gray; 
+   width:70%;
+   background-color: #00091a;
+   margin-bottom: 10px;
+	 margin-left: 15%;
+	 margin-right: 15%;
+	 margin-top: 20px;
+	 color:white;
 }
 
 h1{
-	
 	text-align: center;
-	background-color: silver;
-	padding: 30px 0px;
+	padding: 5px 0px;
 	color: white;
 }
 
@@ -26,7 +34,7 @@ h1{
 }
 .addText{
 	
-	width: 80%;
+	width: 70%;
 	height: 30px;
 	padding:5px;
 	font-size: 20px;
@@ -35,24 +43,35 @@ h1{
 .addItem button{
 	
 	height:48px;
-	width: 50px;
+	width: 70px;
 	padding:10px;
 	
 }
-.con{
-	 background-color: wheat;
-	padding: 10px 0px;
-	margin-bottom: 5px;
-	margin-top: 20px;
+.con1 {
+	
+ 	width:70%;
+  margin-bottom: 10px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 15px;
+	color:white;
+}
+
+.con1 button{
+	 border:none; 
+   color:white;
+}
+
+.form-control{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
 }
 
 span{
-	
 	float:right;
-	
 }
+
 .fl{
-	
 	float:left;
-	
-}
+	}
