@@ -7,30 +7,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   items = ["Assignment", "Game", "Study"]
-   newItem = "";
-   updatedItem ="";
-   IsForUpdate: boolean = false;
+	items = ["Assignment", "Game", "Study"]
+	newItem = "";
+	updatedItem ="";
+	IsForUpdate: boolean = false;
  
 
-  pushItem = function(){
-   if(this.newItem != ""){
+pushItem = function(){
+    if(this.newItem != ""){
     this.items.push(this.newItem);
     this.newItem ="";
 }
 }
 
- removeItem = function(i){
+removeItem = function(i){
 	this.items.splice(i,1);
-	
-	}
+}
 	
 editItem = function(i) {  
    this.newItem = this.items[i];  
-   this.updatedItem = i;
-   this.IsForUpdate = true;
+   this.updatedItem = i;  
+   this.IsForUpdate = true; 
   
-   }
+}
   
 UpdateItem = function() {  
    let data = this.updatedItem;  
@@ -42,6 +41,5 @@ UpdateItem = function() {
    this.IsForUpdate = false; 
    this.newItem = "";  
 }  
-   
 }
 
